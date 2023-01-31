@@ -7,5 +7,5 @@
 }
 
 .card_container{
-    @apply p-4 flex flex-wrap
+    @apply grid gap-4 grid-cols-2 p-4
 }

@@ -22,9 +22,9 @@ const WhistListCard = (props: Props) => {
         navigate('/whistlistDetail', { state: { item: item } })
     }
     return (
-        <div className={`${className}`} onClick={handleClick} >
+        <div className={`${className} ${styles.container}`} onClick={handleClick} >
             <div style={{
-                backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${item.image})`,
+                backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.3.5), rgba(0, 0, 0, 0.3.5)), url(${item.image})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
 
@@ -32,6 +32,9 @@ const WhistListCard = (props: Props) => {
                 <div className={`${styles.progress_container}`}>
                     <div className={styles.progress}><CircularProgress progress={item.progress} textSize={1.5} /></div>
                 </div>
+            </div>
+            <div className={`${styles.text}`} >
+                <span>{item.name}</span>
             </div>
         </div>
     )

@@ -42,7 +42,7 @@ const WhistList: React.FC<Props> = (props) => {
                     {
                         data.map((item, key) => {
                             return (
-                                <WhistListCard item={item} key={key} className={`w-1/2 p-2 pb-4`} />
+                                <WhistListCard item={item} key={key} />
                             )
                         })
                     }

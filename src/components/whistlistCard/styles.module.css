@@ -10,3 +10,11 @@
 .progress{
     @apply w-24
 }
+
+.container{
+    @apply rounded-sm overflow-hidden drop-shadow-lg
+}
+
+.text{
+    @apply bg-accent2 px-1
+}
