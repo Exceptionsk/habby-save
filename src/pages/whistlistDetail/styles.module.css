@@ -1,0 +1,17 @@
+.container{
+    @apply bg-black2
+    h-[calc(100%-56px)]
+    overflow-auto
+}
+
+.progress{
+    @apply h-full flex items-center justify-center
+}
+
+.image{
+    @apply h-80
+}
+
+.timeline{
+    @apply pb-10
+}

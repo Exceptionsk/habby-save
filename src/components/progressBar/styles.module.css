@@ -1,0 +1,16 @@
+.container{
+    @apply h-4 w-full rounded-3xl 
+}
+
+.filler{
+    @apply h-full text-right rounded-3xl relative
+}
+
+.animation{
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+}
+
+.label{
+    @apply text-white font-bold text-sm absolute -top-0.5 right-2
+}

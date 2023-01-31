@@ -1,0 +1,7 @@
+.divider{
+    @apply w-full 
+}
+
+.child{
+    @apply border-b border-gray-600 mx-3 py-2
+}

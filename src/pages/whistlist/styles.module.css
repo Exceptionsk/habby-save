@@ -1,0 +1,11 @@
+.container {
+    @apply overflow-auto h-[calc(100%-56px)] pb-20
+}
+
+.search_bar{
+    @apply sticky top-0 z-10 w-full p-3 border-b border-gray-700 bg-black1
+}
+
+.card_container{
+    @apply p-4 flex flex-wrap
+}

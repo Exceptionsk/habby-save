@@ -1,0 +1,60 @@
+.container {
+    @apply py-4 px-4 overflow-auto h-[calc(100%-56px)] pb-20
+}
+
+.balance {
+    @apply flex flex-col items-center text-2xl
+}
+
+.label {
+    @apply text-primary font-bold
+}
+
+.info_container {
+    @apply pt-4 pb-2
+}
+
+.profile_container {
+    @apply flex flex-col items-center justify-center py-6 border border-gray-700 rounded-lg bg-black1
+}
+
+.summary_container {
+    @apply mt-5
+}
+
+.name {
+    @apply text-accent2 font-bold pt-3
+}
+
+.motto {
+    @apply text-xs pt-3 font-bold
+}
+
+.avatar {
+    @apply rounded-[50%] w-24
+}
+
+.summary_container {
+    @apply flex flex-wrap justify-around w-full
+}
+
+.summary {
+    @apply flex flex-col items-center justify-center w-2/4 p-4 relative
+}
+
+.summary:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 70%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid #374151; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.summary_title {
+    @apply text-primary font-bold text-sm pb-1
+}
+
+.summary_value {
+    @apply text-xs
+}

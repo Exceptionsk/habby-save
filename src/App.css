@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.CircularProgressbar-text{
+    stroke: #B65200;
+    stroke-width: 0px;
+}
+
+.vertical-timeline-element-icon{
+    -webkit-box-shadow: 0 0 0 4px #00B652, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%) !important;
+}
+

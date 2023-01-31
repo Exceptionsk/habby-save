@@ -1,0 +1,12 @@
+
+.whistlist_img{
+    @apply object-cover rounded-md
+}
+
+.progress_container{
+    @apply flex w-full items-center justify-center 
+}
+
+.progress{
+    @apply w-24
+}

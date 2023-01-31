@@ -1,0 +1,15 @@
+.container{
+    @apply
+    bg-primary
+    text-white
+    h-14
+    flex
+    justify-center
+    items-center
+    drop-shadow-[0px_5px_5px_rgba(0,0,0,0.5)]
+}
+
+.title{
+    @apply
+    font-bold
+}

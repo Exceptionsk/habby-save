@@ -1,0 +1,15 @@
+.information{
+    @apply w-full text-black flex flex justify-around px-4 py-4 shadow-md bg-black1 sticky top-0 z-10
+}
+
+.info_container{
+    @apply flex flex-col items-center
+}
+
+.title{
+    @apply font-bold text-green-500  text-lg text-primary
+}
+
+.money{
+    @apply font-medium text-accent2 text-sm
+}
