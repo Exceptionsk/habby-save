@@ -15,7 +15,7 @@ const CircularProgress:React.FC<Props> = (props) => {
             {(value: number) => <CircularProgressbar
 
                 value={value} text={`${value}%`}
-                className={'h-48'}
+                className={'h-52'}
                 strokeWidth={5}
                 styles={buildStyles({
                     pathColor: `#B65200`,

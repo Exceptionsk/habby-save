@@ -1,0 +1,11 @@
+.container{
+    @apply w-full
+}
+
+.input{
+    @apply w-full h-9 rounded-md relative px-2 accent-gray-700 focus:outline focus:outline-1 focus:outline-accent2
+}
+
+.icon{
+    @apply absolute right-6 top-5
+}

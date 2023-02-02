@@ -8,13 +8,14 @@
 }
 
 .progress{
-    @apply w-24
+    @apply w-24 h-52
 }
 
 .container{
     @apply rounded-sm overflow-hidden drop-shadow-lg
 }
 
-.text{
-    @apply bg-accent2 px-1
+.text_container{
+    @apply bg-accent2 px-1 whitespace-nowrap h-6
 }
+

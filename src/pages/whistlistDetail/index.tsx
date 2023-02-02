@@ -61,7 +61,7 @@ const Home: React.FC<Props> = (props) => {
 
     return (
         <>
-            <Header title={location.state.item.name} />
+            <Header title={location.state.item.name} backButton />
             <div className={`${props.className} ${styles.container}`} >
                 <div style={{
                     backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${image})`,

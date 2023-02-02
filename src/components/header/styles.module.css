@@ -7,9 +7,14 @@
     justify-center
     items-center
     drop-shadow-[0px_5px_5px_rgba(0,0,0,0.5)]
+    relative
 }
 
 .title{
     @apply
     font-bold
+}
+
+.back{
+    @apply absolute left-5
 }
