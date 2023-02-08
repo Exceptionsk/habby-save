@@ -1,10 +1,10 @@
 import React from 'react'
 import { NavLink  } from 'react-router-dom';
 
-import {AiOutlineHome, AiOutlineUnorderedList, AiOutlineSetting} from 'react-icons/ai'
+import {AiOutlineHome, AiOutlineSetting} from 'react-icons/ai'
 import { BsCartCheck } from 'react-icons/bs'
-import { BiTransferAlt } from 'react-icons/bi'
-
+import { RiArrowUpDownFill } from 'react-icons/ri'
+import { GiTakeMyMoney } from 'react-icons/gi'
 import styles from './styles.module.css'
 
 type Props = {
@@ -18,31 +18,31 @@ const Navbar: React.FC<Props> = (props) => {
             <NavLink  to="/">
                 <div className={`${styles.nav_button}`}>
                     <AiOutlineHome className={`${styles.icon}`} size={30} />
-                      {/* <span className={`${styles.icon_text}`}>Home</span> */}
-                </div>
-            </NavLink >
-            <NavLink  to="/whistlist">
-                <div className={`${styles.nav_button}`}>
-                    <AiOutlineUnorderedList className={`${styles.icon}`} size={30} />
-                    {/* <span className={`${styles.icon_text}`}>Whist List</span> */}
+                      <span className={`${styles.icon_text}`}>Home</span>
                 </div>
             </NavLink >
             <NavLink  to="/owned">
                 <div className={`${styles.nav_button}`}>
                     <BsCartCheck className={`${styles.icon}`} size={30} />
-                    {/* <span className={`${styles.icon_text}`}>Owned</span> */}
+                    <span className={`${styles.icon_text}`}>Owned</span>
+                </div>
+            </NavLink >
+            <NavLink  to="/whistlist">
+                <div className={`${styles.nav_button}`}>
+                    <GiTakeMyMoney className={`${styles.icon}`} size={30} />
+                    <span className={`${styles.icon_text}`}>Saves</span>
                 </div>
             </NavLink >
             <NavLink  to="/history">
                 <div className={`${styles.nav_button}`}>
-                    <BiTransferAlt className={`${styles.icon}`} size={30}/>
-                    {/* <span className={`${styles.icon_text}`}>History</span> */}
+                    <RiArrowUpDownFill className={`${styles.icon}`} size={30}/>
+                    <span className={`${styles.icon_text}`}>History</span>
                 </div>
             </NavLink >
             <NavLink  to="/settings">
                 <div className={`${styles.nav_button}`}>
                     <AiOutlineSetting className={`${styles.icon}`} size={30} />
-                    {/* <span className={`${styles.icon_text}`}>Settings</span> */}
+                    <span className={`${styles.icon_text}`}>Settings</span>
                 </div>
             </NavLink >
         </div>

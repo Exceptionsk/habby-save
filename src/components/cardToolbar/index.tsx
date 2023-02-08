@@ -25,7 +25,7 @@ const CardToolbar: React.FC<Props> = (props) => {
             </div>
             <div className={`${styles.toolbar_button}`}>
                 <RiArrowUpDownFill className={`${styles.icon}`} size={30} />
-                <span className={styles.icon_text}>Transaction</span>
+                <span className={styles.icon_text}>History</span>
             </div>
             <div className={`${styles.toolbar_button}`}>
                 <IoIosShareAlt className={`${styles.icon}`} size={30} />
