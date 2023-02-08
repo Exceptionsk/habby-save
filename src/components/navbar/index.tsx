@@ -1,9 +1,8 @@
 import React from 'react'
 import { NavLink  } from 'react-router-dom';
 
-import { FcHome, FcTodoList, FcEngineering, FcInspection, FcFinePrint } from 'react-icons/fc';
 import {AiOutlineHome, AiOutlineUnorderedList, AiOutlineSetting} from 'react-icons/ai'
-import { BsFillCartCheckFill, BsCartCheck } from 'react-icons/bs'
+import { BsCartCheck } from 'react-icons/bs'
 import { BiTransferAlt } from 'react-icons/bi'
 
 import styles from './styles.module.css'
