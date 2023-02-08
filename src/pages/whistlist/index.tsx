@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import { AiOutlineSearch } from 'react-icons/ai'
+import { IoMdAdd, IoMdClose } from 'react-icons/io'
 
 import Navbar from '../../components/navbar'
 import Header from '../../components/header'
@@ -17,9 +18,9 @@ type Props = {
 }
 
 const WhistList: React.FC<Props> = (props) => {
-    const [cardStyle, setCardStyle] = useState<string>()
+    const [search, setSearch] = useState<boolean>(false)
     const data = [
-        { id: 1, name: 'XN raisasdfasdfasdfasdfasfer', image: image, progress: 55 },
+        { id: 1, name: 'XN raiser', image: image, progress: 55 },
         { id: 2, name: 'XN raiser', image: freedom, progress: 34 },
         { id: 3, name: 'XN raiser', image: image, progress: 65 },
         { id: 4, name: 'XN raiser', image: freedom, progress: 34 },
@@ -33,16 +34,40 @@ const WhistList: React.FC<Props> = (props) => {
         { id: 12, name: 'XN raiser', image: freedom, progress: 2 },
     ]
 
+    const rightComponents = () => {
+        return (
+            <div onClick={handleSearchClick}>{!search ? <AiOutlineSearch size={22} /> : <IoMdClose size={22} />}</div>
+        )
+    }
 
+    const handleSearchClick = () => {
+        if (search) {
+            setSearch(false)
+        } else {
+            setSearch(true)
+        }
+    }
+
+    useEffect(() => {
+        if (search) {
+
+        }
+    }, [search])
     return (
         <>
-            <Header title={'Whist List'} />
+            <Header title={'Whist List'}
+                rightComponents={rightComponents()}
+            />
+            <div className={styles.floating_button}><IoMdAdd className={'text-white'} size={22} /></div>
             <div className={`${props.className} ${styles.container}`} >
-                <div className={styles.search_bar}>
-                    <TextInput
-                        icon={<AiOutlineSearch size={22} />}
-                    />
-                </div>
+                {
+                    search &&
+                    <div className={styles.search_bar}>
+                        <TextInput autoFocus={true}
+                            icon={<AiOutlineSearch size={22} />}
+                        />
+                    </div>
+                }
                 <div className={styles.card_container}>
                     {
                         data.map((item, key) => {
