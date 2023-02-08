@@ -36,7 +36,7 @@ const Navbar: React.FC<Props> = (props) => {
             <NavLink  to="/history">
                 <div className={`${styles.nav_button}`}>
                     <RiArrowUpDownFill className={`${styles.icon}`} size={30}/>
-                    <span className={`${styles.icon_text}`}>History</span>
+                    <span className={`${styles.icon_text}`}>Trans</span>
                 </div>
             </NavLink >
             <NavLink  to="/settings">
