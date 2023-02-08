@@ -5,6 +5,8 @@ import styles from './styles.module.css'
 type Props = {
     className?: string,
     icon?: React.ReactNode,
+    id?: string,
+    autoFocus?: boolean,
     placeholder?: string,
     onIconClick?:  React.MouseEventHandler<HTMLDivElement>,
     onChange?: (e?: React.ChangeEvent<HTMLInputElement>) => void
