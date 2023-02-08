@@ -16,6 +16,9 @@
 }
 
 .text_container{
-    @apply bg-accent2 px-1 whitespace-nowrap h-6
+    @apply bg-accent2 px-2 h-6 w-full min-w-0
 }
 
+.text{
+   @apply text-ellipsis whitespace-nowrap overflow-hidden text-text
+}
