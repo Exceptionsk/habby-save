@@ -5,7 +5,11 @@
 }
 
 .progress{
-    @apply h-full flex items-center justify-center
+    @apply h-full flex items-center justify-center relative
+}
+
+.published{
+    @apply absolute right-3 bottom-3
 }
 
 .image{
