@@ -2,7 +2,7 @@
     @apply
     bg-primary
     text-white
-    h-14
+    h-11
     flex
     justify-center
     items-center
@@ -17,4 +17,8 @@
 
 .back{
     @apply absolute left-5
+}
+
+.right_components{
+    @apply absolute right-5
 }
