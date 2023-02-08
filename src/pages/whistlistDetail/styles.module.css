@@ -5,15 +5,11 @@
 }
 
 .progress{
-    @apply h-full flex items-center justify-center relative
-}
-
-.published{
-    @apply absolute right-3 bottom-3
+    @apply h-full flex items-center justify-center
 }
 
 .image{
-    @apply h-80
+    @apply h-72
 }
 
 .timeline{

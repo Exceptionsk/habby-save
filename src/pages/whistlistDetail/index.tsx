@@ -5,8 +5,7 @@ import { CgDollar } from 'react-icons/cg'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css'
 
-
-import Navbar from '../../components/navbar'
+import CardToolbar from '../../components/cardToolbar';
 import Header from '../../components/header'
 import Summary from '../../components/summary'
 import CircularProgress from '../../components/circularProgressBar';
@@ -78,9 +77,6 @@ const Home: React.FC<Props> = (props) => {
                     backgroundSize: 'cover',
                 }} className={`${styles.image}`}>
                     <div className={`${styles.progress}`}>
-                        <div className={`${styles.published}`}>
-                            <SwitchComponent onChange={handleCheck} checked={published} label={`Public`} />
-                        </div>
                         <CircularProgress progress={66} textSize={1.3} />
                     </div>
                 </div>
@@ -110,7 +106,7 @@ const Home: React.FC<Props> = (props) => {
                 </div>
             </div>
 
-            <Navbar />
+            <CardToolbar />
         </>
     )
 }
