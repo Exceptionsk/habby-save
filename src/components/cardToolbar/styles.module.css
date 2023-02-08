@@ -1,0 +1,34 @@
+.container{
+    @apply 
+    fixed
+    flex
+    w-full
+    bottom-0
+    bg-black1
+    h-14
+    justify-around
+    drop-shadow-[0px_35px_30px_rgba(0,0,0,0.5)]
+    z-20
+    border-t border-gray-700
+}
+
+.toolbar_button{
+    @apply 
+    w-full
+    p-2
+    flex
+    flex-col
+    items-center
+}
+
+.icon{
+    @apply
+    m-auto
+    text-primary
+}
+
+.icon_text{
+    @apply
+    text-xs
+    pt-1
+}
