@@ -18,7 +18,7 @@ const CircularProgress:React.FC<Props> = (props) => {
                 className={'h-52'}
                 strokeWidth={5}
                 styles={buildStyles({
-                    pathColor: `#B65200`,
+                    pathColor: `#FF7708`,
                     textColor: `#00B652`,
                     textSize: `${props.textSize}em`,
 
